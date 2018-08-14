@@ -1,0 +1,250 @@
+<head>
+	<meta name="generator" content="Hugo 0.30.2" />
+   <meta charset="utf-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+   <meta name="description" content="A set of modules for VCV Rack">
+   <meta name="author" content="Leonardo Laguna Ruiz">
+   <link rel="icon" href="./images/favicon.ico">
+
+   <title>Vult Modules for VCV Rack</title>
+
+   
+   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb"
+      crossorigin="anonymous">
+
+   <link rel="stylesheet" href="./css/main.css">
+
+</head>
+
+<div class="container">
+   <div class="row">
+      <div class="col-md-8">
+         <center>
+            <h1>Vult Modules for VCV Rack</h1>
+         </center>
+         <center>
+            <img src="images/VultFamily.png" alt="Modules" style="width:100%;margin-top:40px;margin-bottom:40px;"> </center>
+
+         <ul class="nav nav-tabs">
+   <li class="nav-item">
+      <a class="nav-link" href="./">Home</a>
+   </li>
+   <li class="nav-item dropdown">
+      <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Filters</a>
+      <div class="dropdown-menu">
+         <a class="dropdown-item" href="./freak">Freak</a>
+         <a class="dropdown-item" href="./ferox">Ferox</a>
+         <a class="dropdown-item" href="./vortex">Vortex</a>
+         <a class="dropdown-item" href="./tangents">Tangents</a>
+         <a class="dropdown-item" href="./stabile">Stabile</a>
+         <a class="dropdown-item" href="./unstabile">Unstabile</a>
+         <a class="dropdown-item" href="./lateralus">Lateralus</a>
+         <a class="dropdown-item" href="./rescomb">Rescomb</a>
+         <a class="dropdown-item" href="./julste">Julste</a>
+         <a class="dropdown-item" href="./tohe">Tohe</a>
+      </div>
+   </li>
+   <li class="nav-item dropdown">
+      <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Effects</a>
+      <div class="dropdown-menu">
+         <a class="dropdown-item" href="./debriatus">Debriatus</a>
+         <a class="dropdown-item" href="./flame">Flame</a>
+         <a class="dropdown-item" href="./nopskate">Nopskate</a>
+      </div>
+   </li>
+   <li class="nav-item dropdown">
+      <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Envelopes</a>
+      <div class="dropdown-menu">
+         <a class="dropdown-item" href="./spank">Spank</a>
+         <a class="dropdown-item" href="./slap">Slap</a>
+         <a class="dropdown-item" href="./julste">Julste</a>
+      </div>
+   </li>
+   <li class="nav-item dropdown">
+      <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Drums</a>
+      <div class="dropdown-menu">
+         <a class="dropdown-item" href="./trummor">Trummor</a>
+         <a class="dropdown-item" href="./trummor2">Trummor 2</a>
+      </div>
+   </li>
+   <li class="nav-item dropdown">
+      <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Oscillators</a>
+      <div class="dropdown-menu">
+         <a class="dropdown-item" href="./vessek">Vessek</a>
+         <a class="dropdown-item" href="./caudal">Caudal</a>
+         <a class="dropdown-item" href="./noxious">Noxious</a>
+      </div>
+   </li>
+   <li class="nav-item dropdown">
+      <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Utilities</a>
+      <div class="dropdown-menu">
+         <a class="dropdown-item" href="./flux">Flux</a>
+         <a class="dropdown-item" href="./knobs">Knobs</a>
+         <a class="dropdown-item" href="./send">Send</a>
+         <a class="dropdown-item" href="./bypass">Bypass</a>
+         <a class="dropdown-item" href="./splie">Splie</a>
+         <a class="dropdown-item" href="./hyperpower">HyperPower</a>
+         <a class="dropdown-item" href="./panels">Blank Panel</a>
+      </div>
+   </li>
+   <li class="nav-item">
+      <a class="nav-link" href="./download">Download</a>
+   </li>
+   <li class="nav-item">
+      <a class="nav-link" href="./about">About</a>
+   </li>
+</ul>
+
+         <p>
+            This is a set of modules that have been carefully designed to fit the Eurorack style of VCV Rack. The modules are coded in
+            the Vult programming language.
+         </p>
+         <p>
+            The Vult modules are "Virtual Analog". The internals of the modules are modeled using electrical circuits and differential
+            equations, but some behaviors have been simplified when they are easier to do in code. These modules are not
+            emulations of an specific Eurorack module. In the case of the filters the modules try to capture the essence
+            and the sound of the analog versions, and at the same time provide very good performance. Some of the modules,
+            like Trummor 2, were inspired by existing hardware but have evolved into complete original designs.
+         </p>
+
+         <h2>Design Philosophy</h2>
+
+         <p>
+            When designing these modules I have established the following rules:
+         </p>
+         <ul>
+            <li>it should look like a real Eurorack module</li>
+            <li>the interaction has to be limited to real hardware components (knobs, switches, etc.)</li>
+            <li>if I cannot build the real hardware, I will not build the software</li>
+            <li>and of course, the module needs to sound good</li>
+         </ul>
+         <p>Following these rules helps me constrain the ideas for modules I have. But I may break them in the future.</p>
+
+         <h2> Module Packages </h2>
+         <p>The modules are split into three packages: Premium, Compacts and Free. The Free package is a reduced version of
+            the Premium. You can find more information in the following links:</p>
+         <center>
+            <a href="./premium/" class="btn btn-primary" role="button">VultModules</a>
+            <a href="./compacts/" class="btn btn-primary" role="button">VultCompacts</a>
+            <a href="./free/" class="btn btn-primary" role="button">VultModules Free</a>
+         </center>
+
+
+         <h2> List of Modules </h2>
+         <h4 id="filters">Filters</h4>
+
+         <center>
+            <img src="images/Filters.png" alt="Filters" style="width:100%;margin-top:40px;margin-bottom:40px;"> </center>
+
+
+         <ul>
+            <li>
+               <a href="https://modlfo.github.io/VultModules/freak/">Freak</a>: Manifold Filter (all Vult filters in one).</li>
+            <li>
+               <a href="https://modlfo.github.io/VultModules/ferox/">Ferox</a>: CMOS Filter.</li>
+            <li>
+               <a href="https://modlfo.github.io/VultModules/lateralus/">Lateralus</a>: Diode Ladder Filter.</li>
+            <li>
+               <a href="https://modlfo.github.io/VultModules/vortex/">Vortex</a>: Russian Filter.</li>
+            <li>
+               <a href="https://modlfo.github.io/VultModules/tangents/">Tangents</a>: Steiner-Parker Filter.</li>
+            <li>
+               <a href="https://modlfo.github.io/VultModules/stabile/">Stabile</a>: State Variable Filter.</li>
+            <li>
+               <a href="https://modlfo.github.io/VultModules/unstabile/">Unstabile</a>: Circuit Bent State Variable Filter.</li>
+            <li>
+               <a href="https://modlfo.github.io/VultModules/rescomb/">Rescomb</a>: Resonant Comb Filter.</li>
+            <li>
+               <a href="https://modlfo.github.io/VultModules/julste/">Julste</a>: Low Pass Gate. Buchla model.</li>
+            <li>
+               <a href="https://modlfo.github.io/VultModules/tohe/">Tohe</a>: Tone Control.</li>
+         </ul>
+         <h4 id="effects">Effects</h4>
+         <center>
+            <img src="images/Effects.png" alt="Effects" style="width:100%;margin-top:40px;margin-bottom:40px;"> </center>
+
+         <ul>
+            <li>
+               <a href="https://modlfo.github.io/VultModules/debriatus/">Debriatus</a>: Wave Destruction. Wave Folder, Bit Crusher, Distortion and Saturation.</li>
+            <li>
+               <a href="https://modlfo.github.io/VultModules/flame/">Flame</a>: Analog distortion based on guitar pedals.</li>
+            <li>
+               <a href="https://modlfo.github.io/VultModules/nopskate/">Nopskate</a>: Flip-Flop octaver based on guitar pedals.</li>
+
+         </ul>
+         <h4 id="envelopes-vca">Envelopes &amp; VCA</h4>
+
+         <center>
+            <img src="images/Envelopes.png" alt="Envelopes" style="width:100%;margin-top:40px;margin-bottom:40px;"> </center>
+
+         <ul>
+            <li>
+               <a href="https://modlfo.github.io/VultModules/spank/">Spank</a>: Drum Envelope.</li>
+            <li>
+               <a href="https://modlfo.github.io/VultModules/slap/">Slap</a>: Hitting Envelope.</li>
+            <li>
+               <a href="https://modlfo.github.io/VultModules/julste/">Julste</a>: Low Pass Gate. Buchla model.</li>
+         </ul>
+         <h4 id="drums">Drums</h4>
+
+         <center>
+            <img src="images/Drums.png" alt="Drums" style="width:100%;margin-top:40px;margin-bottom:40px;"> </center>
+
+         <ul>
+            <li>
+               <a href="https://modlfo.github.io/VultModules/trummor/">Trummor</a>: Drums Synthesizer.</li>
+            <li>
+               <a href="https://modlfo.github.io/VultModules/trummor2/">Trummor 2</a>: Drum (Percussion) Synthesizer.</li>
+         </ul>
+         <h4 id="oscillators">Oscillators</h4>
+         <center>
+            <img src="images/Oscillators.png" alt="Oscillators" style="width:100%;margin-top:40px;margin-bottom:40px;"> </center>
+
+         <ul>
+            <li>
+               <a href="https://modlfo.github.io/VultModules/vessek/">Vessek</a>: Complex Analog Oscillator.</li>
+            <li>
+               <a href="https://modlfo.github.io/VultModules/caudal/">Caudal</a>: Mechanical Chaos Source.</li>
+            <li>
+               <a href="https://modlfo.github.io/VultModules/noxious/">Noxious</a>: Pure Distortion Oscillator.</li>
+
+         </ul>
+         <h4 id="utilities">Utilities</h4>
+         <center>
+            <img src="images/Utilities.png" alt="Utilities" style="width:100%;margin-top:40px;margin-bottom:40px;"> </center>
+
+         <ul>
+            <li>
+               <a href="flux/">Flux</a>: Quad Voltage Processor</li>
+            <li>
+               <a href="knobs/">Knobs</a>: Modulation mixer and macro control</li>
+            <li>
+               <a href="send/">Send</a>: Stereo channel send/return</li>
+            <li>
+               <a href="bypass/">Bypass</a>: Stereo channel effect bypass</li>
+            <li>
+               <a href="https://modlfo.github.io/VultModules/splie/">Splie</a>: Buffer</li>
+            <li>
+               <a href="https://modlfo.github.io/VultModules/hyperpower/">HyperPower</a>: Infinite Power Supply.</li>
+            <li>
+               <a href="https://modlfo.github.io/VultModules/panels/">Blank Panels</a>: Beautify your Rack.</li>
+         </ul>
+      </div>
+   </div>
+</div>
+
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+   crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4"
+   crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js" integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1"
+   crossorigin="anonymous"></script>
+
+
+<footer class="footer">
+   <div class="container">
+      <p style="margin-top:20px; margin-bottom:20px">
+         <a href="http://modlfo.github.io">Leonardo Laguna Ruiz</a> 2018 </p>
+
+   </div>
+</footer>
